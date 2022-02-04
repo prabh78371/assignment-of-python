@@ -1,0 +1,25 @@
+
+# print complex number
+
+class Complex:
+    def getdata(self):
+        self.r = int(input("enter the n1: "))
+        self.i = int(input("enter the n2: "))
+    
+    def add(self,fun):
+        a = self.r + fun.r
+        b = self.i + fun.i
+        print("sum : " +str(a)+ "+" +str(b)+ "i")
+    def sub(self,fun):
+         x = self.r - fun.r
+         y = self.i - fun.i
+         print("subtraction = " +str(x)+ "-" +str(y)+ "i")
+    
+c1=Complex()
+fun=Complex()
+print("enter 1 number: ")
+c1.getdata()
+print("enter 2 number: ")
+fun.getdata()
+c1.add(fun)
+c1.sub(fun)

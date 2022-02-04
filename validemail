@@ -1,0 +1,8 @@
+#print the emails that are matching to the validate pattern
+
+import re
+my_str = "priya@gmail.com 1riya@gmail.com hina@gmail.123"
+emails = re.findall("([A-za-z0-9._]+@[A-Za-z0-9\.-]+\.[A-z|a-z]{1,3})",my_str)
+for mail in emails:
+     print(mail)
+
