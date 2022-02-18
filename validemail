@@ -3,9 +3,9 @@ import re
 regex = '^[a-zA-Z0-9]+[a-zA-Z0-9]+[@]+[a-zA-Z]{1,3}'
 def check(email):
     if(re.search(regex,email)):
-        print("valid emails",email)
+        print("valid email = ",email)
     else:
-        print('invalid emails',email)
+        print('invalid email = ',email)
 if __name__ == '__main__':
     n = int(input("enter number of emails: "))
 emails = [input() for email in range(n)]
