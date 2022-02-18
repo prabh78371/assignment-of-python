@@ -7,16 +7,13 @@ class Complex:
     def __add__(self,comp):
         n1 = float(self.real + comp.real)
         n2 = float(self.imag + comp.imag)
-        return  Complex(n1,n2)
+        return  complex(n1,n2)
     
     def __sub__(self,comp):
         m1= float(self.real - comp.real)
         m2 = float(self.imag - comp.imag)
-        return  Complex(m1,m2)
-         
-    def __str__(self):
-        return str(self.real)+  '+'  +str(self.imag)+  'i'
-    
+        return  complex(m1,m2)
+               
 c1 = Complex(2,3)       
 c2 = Complex(4,5)
 Complex.__add__(c1,c2)
